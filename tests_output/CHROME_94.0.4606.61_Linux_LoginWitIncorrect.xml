@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="LoginWitIncorrect"
+    errors="0" failures="0" hostname="" id="" package="LoginWitIncorrect" skipped="0"
+    tests="1" time="6.046" timestamp="">
+  
+    <testcase name="Login Via Icon Button With Incorrect Data  On Main Page" classname="LoginWitIncorrect" time="6.046" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

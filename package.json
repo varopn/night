@@ -1,0 +1,28 @@
+{
+  "name": "night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varopn/night.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varopn/night/issues"
+  },
+  "homepage": "https://github.com/varopn/night#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chromedriver": "^93.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "geckodriver": "^2.0.4",
+    "nightwatch": "^1.7.11"
+  }
+}
