@@ -10,12 +10,17 @@ module.exports = {
     const mainPage = browser.page.MainPage.mainPage();
     const loginPage = browser.page.LoginPage.loginPage();
     const accountPage = browser.page.AccountPage.accountInfo();
+    const email = 'varopn@gmail.com';
+    const password = 'N+*wi%4?C7NV4&D';
+    const dateOfBirth = '06.03.1999';
+    const sex = 'männlich';
+
 
     mainPage
       .navigate()
       .clickAccountIconButton();
     loginPage
-      .typeEmailInInput();
+      .typeEmailInInput(email);
     browser
       .pause(2000)
       .execute(() => document.querySelector('cmp-banner').shadowRoot
@@ -24,18 +29,18 @@ module.exports = {
     loginPage
       .clickFirstSubmitButton()
       .clickPasswordShowButton()
-      .typePasswordInInput()
+      .typePasswordInInput(password)
       .clickFormSubmitButton()
       .clickConfirmButton();
     mainPage
       .pause(5000)
       .clickAccountIconButtonAfter();
     accountPage
-      .getEmailOnPage()
+      .getEmailOnPage(email, 'Verify email if login worked correct')
       .clickMainInfoTab()
-      .getEmailOnMainInfoTab()
-      .getSexOnMainInfoTab()
-      .getDateOfBirthOnMainInfoTab();
+      .getEmailOnMainInfoTab(email, 'Verify email if login worked correct')
+      .getSexOnMainInfoTab(sex, 'Verify sex if login worked correct')
+      .getDateOfBirthOnMainInfoTab(dateOfBirth, 'Verify date of birth if login worked correct');
   },
   after(browser) {
     browser.end();

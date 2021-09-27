@@ -7,31 +7,31 @@ module.exports = {
     accountPageEmail: '//*[@id="__next"]/div/div[2]/div[1]/div[2]',
   },
   commands: [{
-    getEmailOnMainInfoTab() {
+    getEmailOnMainInfoTab(email, title) {
       // get email on main info tab
       return this
         .waitForElementPresent('@accountPageInfoTabEmail', 2000)
-        .assert.containsText('@accountPageInfoTabEmail', 'varopn@gmail.com', 'Verify email if login worked correct');
+        .assert.containsText('@accountPageInfoTabEmail', email, title);
     },
 
-    getSexOnMainInfoTab() {
+    getSexOnMainInfoTab(sex, title) {
       // get sex on main info tab
       return this
         .waitForElementPresent('@accountPageInfoTabSex', 2000)
-        .assert.containsText('@accountPageInfoTabSex', 'männlich', 'Verify sex if login worked correct');
+        .assert.containsText('@accountPageInfoTabSex', sex, title);
     },
 
-    getDateOfBirthOnMainInfoTab() {
+    getDateOfBirthOnMainInfoTab(dateOfBirth, title) {
       // get date of birth on main info tab
       return this
         .waitForElementPresent('@accountPageInfoTabDateOfBirth', 2000)
-        .assert.containsText('@accountPageInfoTabDateOfBirth', '06.03.1999', 'Verify date of birth if login worked correct');
+        .assert.containsText('@accountPageInfoTabDateOfBirth', dateOfBirth, title);
     },
 
-    getEmailOnPage() {
+    getEmailOnPage(email, title) {
       return this
         .waitForElementPresent('@accountPageEmail', 5000)
-        .assert.containsText('@accountPageEmail', 'varopn@gmail.com', 'Verify email if login worked correct');
+        .assert.containsText('@accountPageEmail', email, title);
     },
 
     clickMainInfoTab() {

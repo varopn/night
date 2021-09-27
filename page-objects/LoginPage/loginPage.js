@@ -12,11 +12,11 @@ module.exports = {
   },
   commands: [{
 
-    typeEmailInInput() {
+    typeEmailInInput(email) {
       // typing email to login form
       return this
         .waitForElementPresent('@loginPageEmailInput', 5000)
-        .setValue('@loginPageEmailInput', 'varopn@gmail.com');
+        .setValue('@loginPageEmailInput', email);
     },
 
     clickFirstBannerButton() {
@@ -40,38 +40,31 @@ module.exports = {
         .click('@loginPagePasswordShowIcon');
     },
 
-    typePasswordInInput() {
+    typePasswordInInput(password) {
       // typing password to login form
       return this
         .waitForElementPresent('@loginPagePasswordInput', 500)
-        .setValue('@loginPagePasswordInput', 'N+*wi%4?C7NV4&D');
+        .setValue('@loginPagePasswordInput', password);
     },
 
-    typeInvalidPasswordInInput() {
-      // typing password to login form
-      return this
-        .waitForElementPresent('@loginPagePasswordInput', 500)
-        .setValue('@loginPagePasswordInput', 'N+*wi%4?C7NV4&');
-    },
-
-    clickFormSubmitButton(page) {
+    clickFormSubmitButton() {
       // clicking on login button
       return this
         .waitForElementPresent('@loginPageFormSubmitButton', 5000)
         .click('@loginPageFormSubmitButton');
     },
 
-    clickConfirmButton(page) {
+    clickConfirmButton() {
       return this
         .waitForElementPresent('@loginPageConfirmButton', 5000)
         .click('@loginPageConfirmButton');
     },
 
-    getMessageOnPage() {
+    getMessageOnPage(message, title) {
       // get Alert Message when ckick on log in with invalid Password
       return this
         .waitForElementPresent('@loginPageMessageDivWrongPassword', 1000)
-        .assert.containsText('@loginPageMessageDivWrongPassword', 'Bitte gib ein gültiges Passwort ein.', 'Verify alert if password is incorrect');
+        .assert.containsText('@loginPageMessageDivWrongPassword', message, title);
     },
   }],
 };

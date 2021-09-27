@@ -6,16 +6,18 @@ module.exports = {
     browser.globals.waitForConditionTimeout = 7000;
   },
 
-  'Login Via Icon Button With Incorrect Data  On Main Page': function (browser) {
+  'Login via Account Icon button with incorrect data on main page': function (browser) {
     const mainPage = browser.page.MainPage.mainPage();
     const loginPage = browser.page.LoginPage.loginPage();
     const accountPage = browser.page.AccountPage.accountInfo();
+    const email = 'varopn@gmail.com';
+    const password = 'N+*wi%4?C7NV4&';
 
     mainPage
       .navigate()
       .clickAccountIconButton();
     loginPage
-      .typeEmailInInput();
+      .typeEmailInInput(email);
     browser
       .pause(2000)
       .execute(() => document.querySelector('cmp-banner').shadowRoot
@@ -24,9 +26,9 @@ module.exports = {
     loginPage
       .clickFirstSubmitButton()
       .clickPasswordShowButton()
-      .typeInvalidPasswordInInput()
+      .typePasswordInInput(password)
       .clickFormSubmitButton()
-      .getMessageOnPage();
+      .getMessageOnPage('Bitte gib ein gültiges Passwort ein.', 'Verify alert if password is incorrect');
   },
   after(browser) {
     browser.end();
