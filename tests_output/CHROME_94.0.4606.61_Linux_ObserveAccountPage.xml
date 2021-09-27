@@ -5,9 +5,9 @@
 
   <testsuite name="ObserveAccountPage"
     errors="0" failures="0" hostname="" id="" package="ObserveAccountPage" skipped="0"
-    tests="1" time="13.20" timestamp="">
+    tests="1" time="14.24" timestamp="">
   
-    <testcase name="Observing Account Page agter login with correct data" classname="ObserveAccountPage" time="13.20" assertions="17">
+    <testcase name="Observing Account Page agter login with correct data" classname="ObserveAccountPage" time="14.24" assertions="17">
 
     
 

@@ -2,7 +2,7 @@ Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-ref
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1632743531,618][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632743546,020][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632743552,813][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632743559,405][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+[1632743821,801][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+[1632743836,136][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+[1632743851,784][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+[1632743858,831][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
