@@ -5,9 +5,9 @@
 
   <testsuite name="LoginViaPlus"
     errors="0" failures="0" hostname="" id="" package="LoginViaPlus" skipped="0"
-    tests="1" time="14.48" timestamp="">
+    tests="1" time="26.73" timestamp="">
   
-    <testcase name="Login via Plus Content button on main page" classname="LoginViaPlus" time="14.48" assertions="11">
+    <testcase name="Login via Plus Content button on main page" classname="LoginViaPlus" time="26.73" assertions="11">
 
     
 

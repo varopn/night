@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="login.LoginViaIcon"
+    errors="0" failures="1" hostname="" id="" package="login" skipped="0"
+    tests="1" time="15.30" timestamp="">
+  
+    <testcase name="Login via icon button on main Page" classname="login.LoginViaIcon" time="15.30" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;//*[@id=&#34;confirmButton&#34;]&gt; to be present for 5000 milliseconds. - expected &#34;found&#34; but got: &#34;not found&#34; (5615ms)">    at Page.clickConfirmButton (/home/dev-qa/night/page-objects/LoginPage/loginPage.js:59:10)
+    at Object.Login via icon button on main Page (/home/dev-qa/night/tests/login/LoginViaIcon.js:31:8)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

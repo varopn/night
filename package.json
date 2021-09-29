@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:internet": "nightwatch ./tests/iframe.js ",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js -e env1,env2,env3,env4,env5",
+    "test:browserstack:login": "nightwatch -c nightwatch.browserstack.login.conf.js -e env1,env2,env3,env4,env5"
   },
   "repository": {
     "type": "git",

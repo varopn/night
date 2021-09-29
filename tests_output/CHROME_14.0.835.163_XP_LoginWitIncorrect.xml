@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="LoginWitIncorrect"
+    errors="0" failures="1" hostname="" id="" package="LoginWitIncorrect" skipped="0"
+    tests="1" time="5.473" timestamp="">
+  
+    <testcase name="Login via Account Icon button with incorrect data on main page" classname="LoginWitIncorrect" time="5.473" assertions="1">  <failure message="Timed out while waiting for element &lt;//*[@id=&#34;__next&#34;]/div/div/header/a[3]/div/img&gt; to be present for 5000 milliseconds. - expected &#34;found&#34; but got: &#34;not found&#34; (5071ms)">    at Page.clickAccountIconButton (/home/dev-qa/night/page-objects/MainPage/mainPage.js:22:10)
+    at Object.Login via Account Icon button with incorrect data on main page (/home/dev-qa/night/tests/LoginWitIncorrect.js:18:8)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

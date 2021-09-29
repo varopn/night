@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="LoginViaPlus"
+    errors="0" failures="1" hostname="" id="" package="LoginViaPlus" skipped="0"
+    tests="1" time="5.916" timestamp="">
+  
+    <testcase name="Login via Plus Content button on main page" classname="LoginViaPlus" time="5.916" assertions="1">  <failure message="Timed out while waiting for element &lt;//*[@id=&#34;__next&#34;]/div/div/header/button[2]&gt; to be present for 5000 milliseconds. - expected &#34;found&#34; but got: &#34;not found&#34; (5546ms)">    at Page.clickPlusContentButton (/home/dev-qa/night/page-objects/MainPage/mainPage.js:36:10)
+    at Object.Login via Plus Content button on main page (/home/dev-qa/night/tests/LoginViaPlus.js:18:8)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

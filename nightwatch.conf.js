@@ -5,7 +5,7 @@ module.exports = {
   webdriver: {
     start_process: true,
     server_path: require('chromedriver').path,
-    port: 9515,
+    port: 9999,
   },
 
   test_settings: {
@@ -19,7 +19,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--headless'],
+          //args: ['--headless'],
         },
       },
     },

@@ -10,7 +10,7 @@ module.exports = {
     getEmailOnMainInfoTab(email, title) {
       // get email on main info tab
       return this
-        .waitForElementPresent('@accountPageInfoTabEmail', 2000)
+        .waitForElementPresent('@accountPageInfoTabEmail', 4000)
         .assert.containsText('@accountPageInfoTabEmail', email, title);
     },
 

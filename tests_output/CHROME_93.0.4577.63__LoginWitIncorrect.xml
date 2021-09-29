@@ -5,9 +5,9 @@
 
   <testsuite name="LoginWitIncorrect"
     errors="0" failures="0" hostname="" id="" package="LoginWitIncorrect" skipped="0"
-    tests="1" time="6.163" timestamp="">
+    tests="1" time="13.33" timestamp="">
   
-    <testcase name="Login via Account Icon button with incorrect data on main page" classname="LoginWitIncorrect" time="6.163" assertions="8">
+    <testcase name="Login via Account Icon button with incorrect data on main page" classname="LoginWitIncorrect" time="13.33" assertions="8">
 
     
 

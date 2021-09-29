@@ -1,8 +1,5 @@
-Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 9515
+Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 9999
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1632755131,518][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632755145,456][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632755160,623][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-[1632755167,485][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+[1632922211,841][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.

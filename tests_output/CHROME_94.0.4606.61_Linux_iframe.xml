@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="2">
+
+  <testsuite name="iframe"
+    errors="0" failures="0" hostname="" id="" package="iframe" skipped="0"
+    tests="2" time="5.431" timestamp="">
+  
+    <testcase name="Handling iFrames" classname="iframe" time="4.601" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Handling Nested iFrames" classname="iframe" time="0.8300" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

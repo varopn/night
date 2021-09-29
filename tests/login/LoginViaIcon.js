@@ -6,15 +6,12 @@ module.exports = {
     browser.globals.waitForConditionTimeout = 7000;
   },
 
-  'Observing Account Page agter login with correct data': async function (browser) {
+  'Login via icon button on main Page': function (browser) {
     const mainPage = browser.page.MainPage.mainPage();
     const loginPage = browser.page.LoginPage.loginPage();
     const accountPage = browser.page.AccountPage.accountInfo();
     const email = 'varopn@gmail.com';
-    const password = 'N+*wi%4?C7NV4&D';
-    const dateOfBirth = '06.03.1999';
-    const sex = 'männlich';
-
+    const password = '+!YfDp%Vzr@yX2V';
 
     mainPage
       .navigate()
@@ -36,11 +33,7 @@ module.exports = {
       .pause(5000)
       .clickAccountIconButtonAfter();
     accountPage
-      .getEmailOnPage(email, 'Verify email if login worked correct')
-      .clickMainInfoTab()
-      .getEmailOnMainInfoTab(email, 'Verify email if login worked correct')
-      .getSexOnMainInfoTab(sex, 'Verify sex if login worked correct')
-      .getDateOfBirthOnMainInfoTab(dateOfBirth, 'Verify date of birth if login worked correct');
+      .getEmailOnMainInfoTab(email, 'Verify email if login worked correct');
   },
   after(browser) {
     browser.end();

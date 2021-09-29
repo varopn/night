@@ -5,9 +5,9 @@
 
   <testsuite name="LoginViaIcon"
     errors="0" failures="0" hostname="" id="" package="LoginViaIcon" skipped="0"
-    tests="1" time="13.85" timestamp="">
+    tests="1" time="21.26" timestamp="">
   
-    <testcase name="Login via icon button on main Page" classname="LoginViaIcon" time="13.85" assertions="10">
+    <testcase name="Login via icon button on main Page" classname="LoginViaIcon" time="21.26" assertions="10">
 
     
 

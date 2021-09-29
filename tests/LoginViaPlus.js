@@ -11,11 +11,22 @@ module.exports = {
     const loginPage = browser.page.LoginPage.loginPage();
     const accountPage = browser.page.AccountPage.accountInfo();
     const email = 'varopn@gmail.com';
-    const password = 'N+*wi%4?C7NV4&D';
+    const password = '+!YfDp%Vzr@yX2V';
 
     mainPage
       .navigate()
       .clickPlusContentButton()
+    try {
+      browser
+      .pause(2000)
+      .execute(() => document.querySelector('cmp-banner').shadowRoot
+        .querySelector('cmp-dialog').shadowRoot
+        .querySelector('cmp-button[variant="primary"]').click(), []);
+    }
+    catch(err) {
+        console.log(err);
+    }
+    mainPage
       .clickPlusContentLoginButton();
       loginPage
       .typeEmailInInput(email);
